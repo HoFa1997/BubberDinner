@@ -1,5 +1,5 @@
-using BubberDinner.Application;
-using BubberDinner.Infrastructure;
+using BuberDinner.Application;
+using BuberDinner.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 

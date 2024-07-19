@@ -1,4 +1,4 @@
-namespace BubberDinner.Contracts.Authentication;
+namespace BuberDinner.Contracts.Authentication;
 
 public record AuthenticationResponse(
     Guid Id,

@@ -1,4 +1,4 @@
-namespace BubberDinner.Application.Services.Authentication;
+namespace BuberDinner.Application.Services.Authentication;
 
 public record AuthenticationResult(
     Guid Id,
