@@ -20,11 +20,11 @@ public class AuthenticationController(IAuthenticationService _authenticationServ
         );
 
         var response = new AuthenticationResponse(
-            authResult.Id,
-            authResult.Email,
-            authResult.Token,
-            authResult.FirstName,
-            authResult.LastName
+            authResult.user.Id,
+            authResult.user.Email,
+            authResult.user.FirstName,
+            authResult.user.LastName,
+            authResult.Token
         );
         return Ok(response);
     }
@@ -35,11 +35,11 @@ public class AuthenticationController(IAuthenticationService _authenticationServ
         var authResult = _authenticationService.LoginAsync(request.Email, request.Password);
 
         var response = new AuthenticationResponse(
-            authResult.Id,
-            authResult.Email,
-            authResult.Token,
-            authResult.FirstName,
-            authResult.LastName
+            authResult.user.Id,
+            authResult.user.Email,
+            authResult.user.FirstName,
+            authResult.user.LastName,
+            authResult.Token
         );
         return Ok(response);
     }
