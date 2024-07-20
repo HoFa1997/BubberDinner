@@ -1,4 +1,4 @@
-@host = http://localhost:5000
+@host = http://localhost:5034
 
 POST {{host}}/auth/register
 Content-Type: application/json
@@ -17,7 +17,7 @@ Content-Type: application/json
 
 {
     "email": "hfatemi@hofa.com",
-    "password": "hofa123"
+    "password": "hofa1232"
 }
 
  
