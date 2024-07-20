@@ -30,7 +30,7 @@ public class AuthenticationController(IAuthenticationService _authenticationServ
     }
 
     [HttpPost("login")]
-    public IActionResult Register(LoginRequest request)
+    public IActionResult Login(LoginRequest request)
     {
         var authResult = _authenticationService.LoginAsync(request.Email, request.Password);
 
